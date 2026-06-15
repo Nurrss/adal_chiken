@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200" role="img" aria-label="Adal Chicken logo">
+  <rect width="520" height="200" rx="28" fill="#FF8A1E"/>
+
+  <!-- comb / wattle -->
+  <path d="M68 42
+           C 86 18, 118 22, 122 46
+           C 125 64, 106 70, 100 84"
+        fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" />
+
+  <!-- head -->
+  <circle cx="86" cy="104" r="32" fill="#FFFFFF"/>
+  <!-- eye -->
+  <circle cx="76" cy="96" r="6" fill="#FF8A1E"/>
+
+  <!-- body / wing C-curve -->
+  <path d="M122 92
+           C 152 98, 166 126, 152 152
+           C 138 178, 100 182, 76 168"
+        fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" />
+
+  <!-- wordmark -->
+  <text x="205" y="98" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#FFFFFF">Adal</text>
+  <text x="205" y="156" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#FFFFFF">Chicken</text>
+</svg>
