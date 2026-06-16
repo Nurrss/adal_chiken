@@ -676,7 +676,7 @@ export const businessInfo = {
   logoIcon: logoIconImg,
   address: { ru: 'ул. Айтиева, 32', kz: 'Әйтиев көшесі, 32' },
   hours: { ru: '11:00 – 01:00', kz: '11:00 – 01:00' },
-  whatsapp: '+77077287558',
+  whatsapp: '+77071887071',
   instagram: 'https://instagram.com/[INSTAGRAM]',
   year: 2026,
 };
