@@ -10,7 +10,10 @@ const { lang, t, cart, addToCart, increment, decrement } = useStore();
 
 <template>
   <div class="menu-card">
-    <div class="photo">{{ item.icon }}</div>
+    <div class="photo">
+      <img v-if="item.image" :src="item.image" :alt="item.name[lang.value]" />
+      <span v-else>{{ item.icon }}</span>
+    </div>
     <div class="body">
       <h3>{{ item.name[lang.value] }}</h3>
       <p>{{ item.desc[lang.value] }}</p>

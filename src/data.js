@@ -1,6 +1,16 @@
 import logoImg from './assets/logo.png';
 import logoIconImg from './assets/logo-without-text.png';
 
+import imgMargarita from './assets/margarita.png';
+import imgPeperoni from './assets/peperoni.png';
+import imgGrib from './assets/grib.png';
+import imgCheese from './assets/cheese.png';
+import img4sezon from './assets/4sezon.png';
+import imgDue from './assets/due.png';
+import imgFriends from './assets/friends.png';
+import imgMix from './assets/mix.png';
+import imgBurger from './assets/burger.png';
+
 // UI strings for the language switcher (RU / KZ)
 export const ui = {
   ru: {
@@ -135,6 +145,7 @@ export const menuItems = [
       kz: 'Моцарелла, балғын қызанақ, фирмалық тұздық',
     },
     price: 2290,
+    image: imgMargarita,
   },
   {
     id: 'pizza-pepperoni',
@@ -146,6 +157,7 @@ export const menuItems = [
       kz: 'Моцарелла, итальян шұжықтары, фирмалық тұздық',
     },
     price: 2590,
+    image: imgPeperoni,
   },
   {
     id: 'pizza-italian',
@@ -168,6 +180,7 @@ export const menuItems = [
       kz: 'Моцарелла, итальян шұжықтары, балғын қызанақ, шампиньон, маринадталған тауық еті, фирмалық тұздық',
     },
     price: 2590,
+    image: img4sezon,
   },
   {
     id: 'pizza-chicken-mushroom',
@@ -179,6 +192,7 @@ export const menuItems = [
       kz: 'Моцарелла, тауық филесі, шампиньон, фирмалық тұздық',
     },
     price: 2590,
+    image: imgGrib,
   },
   {
     id: 'pizza-cheese',
@@ -190,6 +204,7 @@ export const menuItems = [
       kz: 'Моцарелла сыры, қаймақ сыры, сүзбе сыры, фирмалық тұздық',
     },
     price: 2590,
+    image: imgCheese,
   },
   {
     id: 'pizza-cheese-crust',
@@ -247,6 +262,7 @@ export const menuItems = [
       kz: 'Қанат — 15 дана, фри S — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
     },
     price: 4590,
+    image: imgDue,
   },
   {
     id: 'set-max',
@@ -280,6 +296,7 @@ export const menuItems = [
       kz: 'Қанат — 30 дана, фри M — 1 дана, тұздық — 3 дана, сыйлыққа Salam Cola',
     },
     price: 6990,
+    image: imgFriends,
   },
   {
     id: 'set-kvartet',
@@ -302,6 +319,7 @@ export const menuItems = [
       kz: 'Қанат — 20 дана, тауық — 14 дана, стрипс — 10 дана, сирақ — 6 дана, фри L — 2 дана, тұздық — 6 дана, сыйлыққа Salam Cola',
     },
     price: 12990,
+    image: imgMix,
   },
   {
     id: 'set-pizza',
@@ -446,6 +464,7 @@ export const menuItems = [
       kz: 'Шырынды котлет, чеддер сыры, балғын көкөністер',
     },
     price: 1590,
+    image: imgBurger,
   },
   {
     id: 'chicken-roll',
