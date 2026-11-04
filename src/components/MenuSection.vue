@@ -17,7 +17,8 @@ const groupedItems = computed(() => {
 </script>
 
 <template>
-  <section class="menu-section container" id="menu">
+  <section class="menu-section" id="menu">
+    <div class="container">
     <h2>{{ t.menu_title }}</h2>
 
     <div class="filters">
@@ -40,6 +41,7 @@ const groupedItems = computed(() => {
       <div class="menu-grid">
         <MenuCard v-for="item in group.items" :key="item.id" :item="item" />
       </div>
+    </div>
     </div>
   </section>
 </template>

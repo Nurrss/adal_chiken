@@ -12,7 +12,8 @@ function whatsappLink() {
 </script>
 
 <template>
-  <section class="info-section container" id="info">
+  <section class="info-section" id="info">
+    <div class="container">
     <div class="info-grid">
       <div class="info-card">
         <div class="icon">🕐</div>
@@ -34,6 +35,7 @@ function whatsappLink() {
           <a :href="business.instagram" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
+    </div>
     </div>
   </section>
 </template>

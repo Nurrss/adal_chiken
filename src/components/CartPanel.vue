@@ -16,7 +16,10 @@ const { lang, t, cartItems, cartTotal, increment, decrement, clearCart } = useSt
     <div class="cart-body">
       <p class="cart-empty" v-if="cartItems.length === 0">{{ t.cart_empty }}</p>
       <div class="cart-item" v-for="line in cartItems" :key="line.item.id">
-        <div class="icon">{{ line.item.icon }}</div>
+        <div class="icon">
+          <img v-if="line.item.image" :src="line.item.image" :alt="line.item.name[lang.value]" />
+          <span v-else>{{ line.item.icon }}</span>
+        </div>
         <div class="info">
           <h4>{{ line.item.name[lang.value] }}</h4>
           <div class="line-price">{{ formatPrice(line.item.price * line.qty) }} {{ t.currency }}</div>

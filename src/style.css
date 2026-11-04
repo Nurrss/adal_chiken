@@ -294,7 +294,7 @@ button {
 
 /* ---------- Info section ---------- */
 .info-section {
-  padding: 48px 16px;
+  padding: 48px 0;
   background: var(--white);
 }
 
@@ -350,7 +350,7 @@ button {
 
 /* ---------- Menu ---------- */
 .menu-section {
-  padding: 16px 16px 60px;
+  padding: 16px 0 80px;
   background: var(--white);
 }
 
@@ -1028,4 +1028,289 @@ button {
 .fab-cart svg {
   width: 28px;
   height: 28px;
+}
+
+
+/* =========================================================
+   Адаптив: телефон / планшет / ноутбук
+   ========================================================= */
+
+/* Якоря не прячутся под липкой шапкой */
+#info,
+#menu {
+  scroll-margin-top: 64px;
+}
+
+/* --- Hero --- */
+.hero {
+  padding: clamp(40px, 8vw, 88px) 16px clamp(48px, 9vw, 96px);
+}
+
+.hero img.hero-logo {
+  width: clamp(88px, 14vw, 120px);
+  height: clamp(88px, 14vw, 120px);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+.hero .slogan {
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+}
+
+/* --- Фильтры меню: липкие под шапкой --- */
+.filters {
+  position: sticky;
+  top: 60px;
+  z-index: 50;
+  background: var(--white);
+  margin: 0 -16px 20px;
+  padding: 10px 16px;
+}
+
+/* --- Сетка меню --- */
+@media (min-width: 560px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .menu-card .photo {
+    height: 160px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.menu-card {
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+@media (hover: hover) {
+  .menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(61, 43, 31, 0.18);
+  }
+
+  .btn:hover,
+  .filter-btn:hover,
+  .add-btn:hover {
+    opacity: 0.9;
+  }
+}
+
+.add-btn {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+/* --- Карточки «Время / Адрес / Контакты» --- */
+@media (min-width: 640px) {
+  .info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Телефон --- */
+@media (max-width: 559px) {
+  .brand {
+    font-size: 1.05rem;
+  }
+
+  .brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-right {
+    gap: 10px;
+  }
+
+  .hero-meta span {
+    display: block;
+  }
+
+  .btn {
+    padding: 12px 22px;
+  }
+
+  .info-section {
+    padding: 32px 0;
+  }
+
+  .info-grid {
+    gap: 12px;
+  }
+
+  /* Компактные карточки: иконка слева, текст справа */
+  .info-card {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    column-gap: 14px;
+    align-items: center;
+    text-align: left;
+    padding: 16px 18px;
+  }
+
+  .info-card .icon {
+    grid-row: span 3;
+    font-size: 1.9rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .info-card h3 {
+    margin: 0 0 2px;
+    font-size: 1rem;
+  }
+
+  .info-card .contact-row {
+    justify-content: flex-start;
+    margin: 2px 0;
+  }
+
+  .menu-section h2 {
+    font-size: 1.7rem;
+    margin: 8px 0 12px;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+    margin: 28px 0 14px;
+  }
+
+  .menu-grid {
+    gap: 12px;
+  }
+
+  /* Карточка меню горизонтально: фото слева */
+  .menu-card {
+    flex-direction: row;
+  }
+
+  .menu-card .photo {
+    width: 112px;
+    height: auto;
+    min-height: 112px;
+    flex-shrink: 0;
+    font-size: 2.6rem;
+  }
+
+  .menu-card .body {
+    padding: 12px 12px 12px 14px;
+    min-width: 0;
+  }
+
+  .menu-card h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .menu-card p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .filters {
+    top: 56px;
+  }
+
+  .price {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+  }
+
+}
+
+/* Плавающие кнопки: пока экран уже ~1240px, они ложатся поверх «+» у карточек.
+   Корзина со счётчиком всегда видна в липкой шапке, Instagram и WhatsApp —
+   в hero, контактах и футере, поэтому здесь плавающие кнопки скрыты.
+   На широких экранах они стоят сбоку от контента, как раньше. */
+@media (max-width: 1239px) {
+  .floating-actions {
+    display: none;
+  }
+}
+
+/* --- Корзина --- */
+.cart-item .icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.cart-item .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cart-footer {
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+}
+
+/* --- Оформление заказа --- */
+/* 16px в полях — иначе iPhone зумит страницу при вводе */
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group select,
+.form-group textarea {
+  font-size: 16px;
+  font-family: inherit;
+  min-height: 46px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.datetime-row .form-group {
+  min-width: 0;
+}
+
+.modal {
+  padding-bottom: calc(22px + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 639px) {
+  .modal {
+    max-height: 90dvh;
+  }
+}
+
+/* --- Футер --- */
+.site-footer {
+  padding-bottom: calc(36px + env(safe-area-inset-bottom));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-arrow {
+    animation: none;
+  }
 }
