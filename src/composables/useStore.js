@@ -1,5 +1,5 @@
-import { reactive, computed, watch } from "vue";
-import { ui, menuItems, paymentMethods } from "../data.js";
+import { reactive, computed, watch, ref } from "vue";
+import { ui, menuItems, paymentMethods, hits } from "../data.js";
 
 const lang = reactive({ value: localStorage.getItem("adalchicken_lang") || "ru" });
 const cart = reactive(JSON.parse(localStorage.getItem("adalchicken_cart") || "{}"));
@@ -35,6 +35,25 @@ function clearCart() {
 
 const t = computed(() => ui[lang.value]);
 
+// Открытое блюдо (окно с крупным фото)
+const openedItemId = ref(null);
+const openedItem = computed(() => menuItems.find((i) => i.id === openedItemId.value) || null);
+
+function openItem(id) {
+  openedItemId.value = id;
+}
+
+function closeItem() {
+  openedItemId.value = null;
+}
+
+const hitIds = new Set(hits);
+const hitItems = hits.map((id) => menuItems.find((i) => i.id === id)).filter(Boolean);
+
+function isHit(id) {
+  return hitIds.has(id);
+}
+
 const cartItems = computed(() =>
   Object.entries(cart)
     .filter(([, qty]) => qty > 0)
@@ -64,6 +83,11 @@ export function useStore() {
     cartTotal,
     menuItems,
     paymentMethods,
+    openedItem,
+    openItem,
+    closeItem,
+    hitItems,
+    isHit,
   };
 }
 

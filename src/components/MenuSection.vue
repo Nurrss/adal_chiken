@@ -3,6 +3,7 @@ import { ref, computed } from "vue";
 import { useStore } from "../composables/useStore.js";
 import { categories } from "../data.js";
 import MenuCard from "./MenuCard.vue";
+import HitsStrip from "./HitsStrip.vue";
 
 const { lang, t, menuItems } = useStore();
 
@@ -20,6 +21,8 @@ const groupedItems = computed(() => {
   <section class="menu-section" id="menu">
     <div class="container">
     <h2>{{ t.menu_title }}</h2>
+
+    <HitsStrip />
 
     <div class="filters">
       <button
