@@ -133,6 +133,7 @@ function submitOrder() {
         <input type="tel" v-model="form.phone" :placeholder="t.checkout_phone_placeholder" />
       </div>
 
+      <div class="datetime-row">
       <div class="form-group">
         <label>{{ t.checkout_date }}</label>
         <input type="date" v-model="form.date" />
@@ -141,6 +142,7 @@ function submitOrder() {
       <div class="form-group">
         <label>{{ t.checkout_time }}</label>
         <input type="time" v-model="form.time" />
+      </div>
       </div>
 
       <div class="form-group">
