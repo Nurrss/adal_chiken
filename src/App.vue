@@ -8,6 +8,7 @@ import CartPanel from './components/CartPanel.vue';
 import CheckoutModal from './components/CheckoutModal.vue';
 import SiteFooter from './components/SiteFooter.vue';
 import FloatingActions from './components/FloatingActions.vue';
+import ItemSheet from './components/ItemSheet.vue';
 
 const cartOpen = ref(false);
 const checkoutOpen = ref(false);
@@ -30,6 +31,7 @@ function openCheckout() {
     @checkout="openCheckout"
   />
   <CheckoutModal v-if="checkoutOpen" @close="checkoutOpen = false" />
+  <ItemSheet />
 
   <SiteFooter />
   <FloatingActions @open-cart="cartOpen = true" />

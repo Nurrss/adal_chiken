@@ -1,15 +1,15 @@
 import logoImg from './assets/logo.png';
-import logoIconImg from './assets/logo-without-text.png';
+import logoIconImg from './assets/logo-without-text.webp';
 
-import imgMargarita from './assets/margarita.png';
-import imgPeperoni from './assets/peperoni.png';
-import imgGrib from './assets/grib.png';
-import imgCheese from './assets/cheese.png';
-import img4sezon from './assets/4sezon.png';
-import imgDue from './assets/due.png';
-import imgFriends from './assets/friends.png';
-import imgMix from './assets/mix.png';
-import imgBurger from './assets/burger.png';
+import imgMargarita from './assets/margarita.webp';
+import imgPeperoni from './assets/peperoni.webp';
+import imgGrib from './assets/grib.webp';
+import imgCheese from './assets/cheese.webp';
+import img4sezon from './assets/4sezon.webp';
+import imgDue from './assets/due.webp';
+import imgFriends from './assets/friends.webp';
+import imgMix from './assets/mix.webp';
+import imgBurger from './assets/burger.webp';
 
 // UI strings for the language switcher (RU / KZ)
 export const ui = {
@@ -64,6 +64,12 @@ export const ui = {
     wa_phone: 'Номер для перевода',
     wa_datetime: 'Дата и время',
     wa_comment: 'Комментарий',
+    hits_title: 'Популярное',
+    hit_badge: 'Хит',
+    add_short: 'Добавить',
+    add_to_cart_price: 'В корзину',
+    done: 'Готово',
+    in_cart: 'В корзине',
   },
   kz: {
     brand: 'Adal Chicken',
@@ -116,8 +122,25 @@ export const ui = {
     wa_phone: 'Аударым нөмірі',
     wa_datetime: 'Күні мен уақыты',
     wa_comment: 'Пікір',
+    hits_title: 'Танымал',
+    hit_badge: 'Хит',
+    add_short: 'Қосу',
+    add_to_cart_price: 'Себетке',
+    done: 'Дайын',
+    in_cart: 'Себетте',
   },
 };
+
+// Хиты: показываются лентой в начале меню и с меткой «Хит».
+// Чтобы поменять — впишите сюда id блюд из menuItems ниже.
+export const hits = [
+  'set-mix',
+  'set-friends',
+  'pizza-pepperoni',
+  'cheese-burger',
+  'set-duel',
+  'pizza-4seasons',
+];
 
 // Menu categories
 export const categories = [
@@ -263,6 +286,7 @@ export const menuItems = [
     },
     price: 4590,
     image: imgDue,
+    imageCover: true, // фото на сером фоне — растянуть на всю карточку
   },
   {
     id: 'set-max',
@@ -320,6 +344,7 @@ export const menuItems = [
     },
     price: 12990,
     image: imgMix,
+    imageCover: true,
   },
   {
     id: 'set-pizza',
