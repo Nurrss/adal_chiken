@@ -710,7 +710,6 @@ export const menuItems = [
 export const paymentMethods = [
   { id: 'kaspi', name: { ru: 'Kaspi', kz: 'Kaspi' } },
   { id: 'halyk', name: { ru: 'Halyk Bank', kz: 'Halyk Bank' } },
-  { id: 'cash', name: { ru: 'Наличными', kz: 'Қолма-қол ақша' } },
 ];
 
 // Business info placeholders — replace with real data
