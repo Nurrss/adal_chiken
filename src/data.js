@@ -1,5 +1,6 @@
 import logoImg from './assets/logo.png';
 import logoIconImg from './assets/logo-without-text.webp';
+import logoHeaderImg from './assets/logo-header.webp';
 
 import imgMargarita from './assets/margarita.webp';
 import imgPeperoni from './assets/peperoni.webp';
@@ -717,6 +718,7 @@ export const businessInfo = {
   name: 'Adal Chicken',
   logo: logoImg,
   logoIcon: logoIconImg,
+  logoHeader: logoHeaderImg,
   address: { ru: 'ул. Айтиева, 32', kz: 'Әйтиев көшесі, 32' },
   hours: { ru: '11:00 – 01:00', kz: '11:00 – 01:00' },
   whatsapp: '+77071887071',

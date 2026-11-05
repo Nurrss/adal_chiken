@@ -16,7 +16,7 @@ const business = businessInfo;
   <header class="site-header">
     <div class="container">
       <a href="#" class="brand">
-        <img :src="business.logoIcon" alt="Adal Chicken logo" />
+        <img :src="business.logoHeader" alt="Adal Chicken logo" class="brand-logo" />
         <span>{{ business.name }}</span>
       </a>
 

@@ -1946,3 +1946,11 @@ body.no-scroll {
     display: none;
   }
 }
+
+/* Логотип в шапке: оранжевая плитка с белым значком */
+.site-header .brand img.brand-logo {
+  padding: 0;
+  background: none;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
+}
