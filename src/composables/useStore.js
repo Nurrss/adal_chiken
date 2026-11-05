@@ -1,7 +1,7 @@
 import { reactive, computed, watch, ref } from "vue";
 import { ui, menuItems, paymentMethods, hits } from "../data.js";
 
-const lang = reactive({ value: localStorage.getItem("adalchicken_lang") || "ru" });
+const lang = reactive({ value: localStorage.getItem("adalchicken_lang") || "kz" });
 const cart = reactive(JSON.parse(localStorage.getItem("adalchicken_cart") || "{}"));
 
 watch(
@@ -13,6 +13,7 @@ watch(
 function setLang(value) {
   lang.value = value;
   localStorage.setItem("adalchicken_lang", value);
+  document.documentElement.lang = value === "kz" ? "kk" : "ru";
 }
 
 function addToCart(id) {
