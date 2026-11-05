@@ -13,8 +13,6 @@ const form = reactive({
   name: "",
   payment: paymentMethods[0].id,
   phone: "",
-  date: "",
-  time: "",
   comment: "",
 });
 
@@ -24,6 +22,12 @@ function whatsappLink(text) {
   const phone = businessInfo.whatsapp.replace(/[^\d]/g, "");
   const query = text ? `?text=${encodeURIComponent(text)}` : "";
   return `https://wa.me/${phone}${query}`;
+}
+
+function orderDateTime() {
+  const now = new Date();
+  const pad = (n) => String(n).padStart(2, "0");
+  return `${pad(now.getDate())}.${pad(now.getMonth() + 1)}.${now.getFullYear()} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
 }
 
 function submitOrder() {
@@ -56,9 +60,8 @@ function submitOrder() {
   if (form.phone.trim()) {
     lines.push(`${tr.wa_phone}: ${form.phone.trim()}`);
   }
-  if (form.date || form.time) {
-    lines.push(`${tr.wa_datetime}: ${form.date} ${form.time}`.trim());
-  }
+  // Дата и время ставятся автоматически — в момент отправки заказа
+  lines.push(`${tr.wa_datetime}: ${orderDateTime()}`);
   if (form.comment.trim()) {
     lines.push(`${tr.wa_comment}: ${form.comment.trim()}`);
   }
@@ -131,18 +134,6 @@ function submitOrder() {
       <div class="form-group">
         <label>{{ t.checkout_phone }}</label>
         <input type="tel" v-model="form.phone" :placeholder="t.checkout_phone_placeholder" />
-      </div>
-
-      <div class="datetime-row">
-      <div class="form-group">
-        <label>{{ t.checkout_date }}</label>
-        <input type="date" v-model="form.date" />
-      </div>
-
-      <div class="form-group">
-        <label>{{ t.checkout_time }}</label>
-        <input type="time" v-model="form.time" />
-      </div>
       </div>
 
       <div class="form-group">
