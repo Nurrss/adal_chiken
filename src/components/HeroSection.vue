@@ -10,8 +10,8 @@ const business = businessInfo;
   <section class="hero">
     <img :src="business.logo" alt="Adal Chicken" class="hero-logo" />
     <h1>{{ business.name }}</h1>
-    <p class="slogan">{{ ui.ru.slogan }}</p>
-    <p class="slogan kz">{{ ui.kz.slogan }}</p>
+    <p class="slogan">{{ ui.kz.slogan }}</p>
+    <p class="slogan second">{{ ui.ru.slogan }}</p>
     <div class="hero-meta">
       <span>🕐 {{ business.hours[lang.value] }}</span>
       <span>📍 {{ business.address[lang.value] }}</span>
