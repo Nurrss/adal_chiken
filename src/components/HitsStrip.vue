@@ -26,7 +26,10 @@ const { lang, t, cart, hitItems, addToCart, openItem } = useStore();
         <div class="hit-body">
           <h4>{{ item.name[lang.value] }}</h4>
           <div class="hit-row">
-            <span class="hit-price">{{ formatPrice(item.price) }} {{ t.currency }}</span>
+            <span class="price-wrap">
+              <s v-if="item.oldPrice" class="old-price">{{ formatPrice(item.oldPrice) }}</s>
+              <span class="hit-price">{{ formatPrice(item.price) }} {{ t.currency }}</span>
+            </span>
             <button class="hit-add" :aria-label="t.add_to_cart" @click.stop="addToCart(item.id)">+</button>
           </div>
         </div>

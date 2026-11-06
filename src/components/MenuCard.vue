@@ -27,7 +27,10 @@ const { lang, t, cart, addToCart, increment, decrement, openItem, isHit } = useS
       <h3>{{ item.name[lang.value] }}</h3>
       <p class="desc">{{ item.desc[lang.value] }}</p>
       <div class="footer-row" @click.stop>
-        <span class="price">{{ formatPrice(item.price) }} {{ t.currency }}</span>
+        <span class="price-wrap">
+          <s v-if="item.oldPrice" class="old-price">{{ formatPrice(item.oldPrice) }} {{ t.currency }}</s>
+          <span class="price">{{ formatPrice(item.price) }} {{ t.currency }}</span>
+        </span>
         <button v-if="!cart[item.id]" class="add-btn" :aria-label="t.add_to_cart" @click="addToCart(item.id)">
           <span class="plus" aria-hidden="true">+</span>
           <span class="add-label">{{ t.add_short }}</span>
