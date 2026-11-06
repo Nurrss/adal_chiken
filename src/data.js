@@ -12,6 +12,32 @@ import imgFriends from './assets/friends.webp';
 import imgMix from './assets/mix.webp';
 import imgBurger from './assets/burger.webp';
 
+// Фото блюд из печатного меню
+import mPizzaMexican from './assets/menu/pizza-mexican.webp';
+import mPizzaBbq from './assets/menu/pizza-bbq.webp';
+import mPizzaMeat from './assets/menu/pizza-meat.webp';
+import mPizzaBurger from './assets/menu/pizza-burger.webp';
+import mWings from './assets/menu/wings.webp';
+import mDrumsticks from './assets/menu/drumsticks.webp';
+import mStrips from './assets/menu/strips.webp';
+import mNuggets from './assets/menu/nuggets.webp';
+import mChicken14 from './assets/menu/chicken-14.webp';
+import mDoner from './assets/menu/chicken-doner.webp';
+import mRoll from './assets/menu/chicken-roll.webp';
+import mChickenBurger from './assets/menu/chicken-burger.webp';
+import mDog from './assets/menu/chicken-dog.webp';
+import mFriedBox from './assets/menu/fried-box.webp';
+import mFries from './assets/menu/fries.webp';
+import mSauces from './assets/menu/sauces.webp';
+import mAva from './assets/menu/ava.webp';
+import mDada from './assets/menu/dada.webp';
+import mSalamCola from './assets/menu/salam-cola.webp';
+import mSetMax from './assets/menu/set-max.webp';
+import mSetTrio from './assets/menu/set-trio.webp';
+import mSetKvartet from './assets/menu/set-kvartet.webp';
+import mSetMamasita from './assets/menu/set-mamasita.webp';
+import mSetPizza from './assets/menu/set-pizza.webp';
+
 // UI strings for the language switcher (RU / KZ)
 export const ui = {
   ru: {
@@ -235,6 +261,7 @@ export const menuItems = [
       kz: 'Моцарелла, балғын қызанақ, аңшы шұжықтары, болгар бұрышы, зәйтүн, халапеньо бұрышы, фирмалық тұздық',
     },
     price: 2690,
+    image: mPizzaMexican,
   },
   {
     id: 'pizza-bbq',
@@ -246,6 +273,7 @@ export const menuItems = [
       kz: 'Моцарелла, аңшы шұжықтары, тауық филесі, шампиньон, барбекю тұздығы, фирмалық тұздық',
     },
     price: 2690,
+    image: mPizzaBbq,
   },
   {
     id: 'pizza-meat',
@@ -257,6 +285,7 @@ export const menuItems = [
       kz: 'Моцарелла, ысталған сиыр еті, тартылған ет, фирмалық тұздық',
     },
     price: 2990,
+    image: mPizzaMeat,
   },
   {
     id: 'pizza-burger',
@@ -268,6 +297,7 @@ export const menuItems = [
       kz: 'Моцарелла, тартылған ет, шие қызанақ, қызыл пияз, фирмалық тұздық',
     },
     price: 2990,
+    image: mPizzaBurger,
   },
 
   // ---------- SETS ----------
@@ -281,6 +311,7 @@ export const menuItems = [
       kz: 'Chicken Burger + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
     },
     price: 2690,
+    image: mChickenBurger,
   },
   {
     id: 'combo-roll',
@@ -292,6 +323,7 @@ export const menuItems = [
       kz: 'Chicken Roll + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
     },
     price: 2690,
+    image: mRoll,
   },
   {
     id: 'combo-dog',
@@ -303,6 +335,7 @@ export const menuItems = [
       kz: 'Chicken Dog + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
     },
     price: 2690,
+    image: mDog,
   },
   {
     id: 'combo-doner',
@@ -314,6 +347,7 @@ export const menuItems = [
       kz: 'Chicken Doner + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
     },
     price: 2990,
+    image: mDoner,
   },
   {
     id: 'combo-cheese',
@@ -352,6 +386,7 @@ export const menuItems = [
     },
     price: 4990,
     oldPrice: 5590,
+    image: mSetMax,
   },
   {
     id: 'set-trio',
@@ -364,6 +399,7 @@ export const menuItems = [
     },
     price: 5590,
     oldPrice: 6590,
+    image: mSetTrio,
   },
   {
     id: 'set-friends',
@@ -389,6 +425,7 @@ export const menuItems = [
     },
     price: 9990,
     oldPrice: 10990,
+    image: mSetKvartet,
   },
   {
     id: 'set-mix',
@@ -414,6 +451,7 @@ export const menuItems = [
       kz: 'Наггетс — 10 дана, стрипс — 10 дана, фри S — 2 дана, 2 шырын 0.2л, тұздық — 2 дана',
     },
     price: 4990,
+    image: mSetMamasita,
   },
   {
     id: 'set-pizza',
@@ -425,6 +463,7 @@ export const menuItems = [
       kz: 'Қанат — 20 дана, пицца — 1 дана, фри L — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
     },
     price: 7990,
+    image: mSetPizza,
   },
 
   // ---------- CHICKEN ----------
@@ -435,6 +474,7 @@ export const menuItems = [
     name: { ru: 'Крылышки 10 шт', kz: 'Қанат 10 дана' },
     desc: { ru: 'Хрустящие куриные крылышки', kz: 'Қытырлақ тауық қанаттары' },
     price: 2490,
+    image: mWings,
   },
   {
     id: 'wings-20',
@@ -443,6 +483,7 @@ export const menuItems = [
     name: { ru: 'Крылышки 20 шт', kz: 'Қанат 20 дана' },
     desc: { ru: 'Хрустящие куриные крылышки', kz: 'Қытырлақ тауық қанаттары' },
     price: 4490,
+    image: mWings,
   },
   {
     id: 'wings-30',
@@ -451,6 +492,7 @@ export const menuItems = [
     name: { ru: 'Крылышки 30 шт', kz: 'Қанат 30 дана' },
     desc: { ru: 'Хрустящие куриные крылышки', kz: 'Қытырлақ тауық қанаттары' },
     price: 5990,
+    image: mWings,
   },
   {
     id: 'drumsticks-1',
@@ -459,6 +501,7 @@ export const menuItems = [
     name: { ru: 'Куриные ножки 1 шт', kz: 'Тауық сирағы 1 дана' },
     desc: { ru: 'Сочные куриные ножки', kz: 'Шырынды тауық сирақтары' },
     price: 490,
+    image: mDrumsticks,
   },
   {
     id: 'drumsticks-5',
@@ -467,6 +510,7 @@ export const menuItems = [
     name: { ru: 'Куриные ножки 5 шт', kz: 'Тауық сирағы 5 дана' },
     desc: { ru: 'Сочные куриные ножки', kz: 'Шырынды тауық сирақтары' },
     price: 2490,
+    image: mDrumsticks,
   },
   {
     id: 'drumsticks-10',
@@ -475,6 +519,7 @@ export const menuItems = [
     name: { ru: 'Куриные ножки 10 шт', kz: 'Тауық сирағы 10 дана' },
     desc: { ru: 'Сочные куриные ножки', kz: 'Шырынды тауық сирақтары' },
     price: 4290,
+    image: mDrumsticks,
   },
   {
     id: 'strips-5',
@@ -483,6 +528,7 @@ export const menuItems = [
     name: { ru: 'Стрипсы 5 шт', kz: 'Стрипс 5 дана' },
     desc: { ru: 'Хрустящие куриные стрипсы', kz: 'Қытырлақ тауық стрипстері' },
     price: 1490,
+    image: mStrips,
   },
   {
     id: 'strips-10',
@@ -491,6 +537,7 @@ export const menuItems = [
     name: { ru: 'Стрипсы 10 шт', kz: 'Стрипс 10 дана' },
     desc: { ru: 'Хрустящие куриные стрипсы', kz: 'Қытырлақ тауық стрипстері' },
     price: 2690,
+    image: mStrips,
   },
   {
     id: 'strips-15',
@@ -499,6 +546,7 @@ export const menuItems = [
     name: { ru: 'Стрипсы 15 шт', kz: 'Стрипс 15 дана' },
     desc: { ru: 'Хрустящие куриные стрипсы', kz: 'Қытырлақ тауық стрипстері' },
     price: 3490,
+    image: mStrips,
   },
   {
     id: 'nuggets-5',
@@ -507,6 +555,7 @@ export const menuItems = [
     name: { ru: 'Наггетсы 5 шт', kz: 'Наггетс 5 дана' },
     desc: { ru: 'Нежные куриные наггетсы', kz: 'Жұмсақ тауық наггетстері' },
     price: 990,
+    image: mNuggets,
   },
   {
     id: 'nuggets-10',
@@ -515,6 +564,7 @@ export const menuItems = [
     name: { ru: 'Наггетсы 10 шт', kz: 'Наггетс 10 дана' },
     desc: { ru: 'Нежные куриные наггетсы', kz: 'Жұмсақ тауық наггетстері' },
     price: 1590,
+    image: mNuggets,
   },
   {
     id: 'nuggets-15',
@@ -523,6 +573,7 @@ export const menuItems = [
     name: { ru: 'Наггетсы 15 шт', kz: 'Наггетс 15 дана' },
     desc: { ru: 'Нежные куриные наггетсы', kz: 'Жұмсақ тауық наггетстері' },
     price: 1990,
+    image: mNuggets,
   },
   {
     id: 'grill-chicken-14',
@@ -534,6 +585,7 @@ export const menuItems = [
       kz: 'Гриль XXI века — қытырлақ қамырдағы тауық',
     },
     price: 3990,
+    image: mChicken14,
   },
 
   // ---------- BURGERS & FASTFOOD ----------
@@ -547,6 +599,7 @@ export const menuItems = [
       kz: 'Көкөністер мен тұздықпен дайындалған шырынды тауық донері',
     },
     price: 1690,
+    image: mDoner,
   },
   {
     id: 'cheese-burger',
@@ -570,6 +623,7 @@ export const menuItems = [
       kz: 'Тұздық пен көкөністермен лавашқа орналған қытырлақ тауық',
     },
     price: 1490,
+    image: mRoll,
   },
   {
     id: 'chicken-burger',
@@ -581,6 +635,7 @@ export const menuItems = [
       kz: 'Қытырлақ тауық филесі, балғын көкөністер, фирмалық тұздық',
     },
     price: 1490,
+    image: mChickenBurger,
   },
   {
     id: 'chicken-dog',
@@ -592,6 +647,7 @@ export const menuItems = [
       kz: 'Жұмсақ бөлкедегі тауық сосискасы, балғын көкөністер, фирмалық тұздық',
     },
     price: 1290,
+    image: mDog,
   },
   {
     id: 'fried-box',
@@ -603,6 +659,7 @@ export const menuItems = [
       kz: 'Араб лавашымен бірге тұздықтағы чикен және фри',
     },
     price: 2490,
+    image: mFriedBox,
   },
 
   // ---------- SIDES & SAUCES ----------
@@ -616,6 +673,7 @@ export const menuItems = [
       kz: 'Картоп фри, кіші порция',
     },
     price: 690,
+    image: mFries,
   },
   {
     id: 'fries-m',
@@ -627,6 +685,7 @@ export const menuItems = [
       kz: 'Картоп фри, орта порция',
     },
     price: 890,
+    image: mFries,
   },
   {
     id: 'fries-l',
@@ -638,6 +697,7 @@ export const menuItems = [
       kz: 'Картоп фри, үлкен порция',
     },
     price: 990,
+    image: mFries,
   },
   {
     id: 'sauce-bbq',
@@ -646,6 +706,7 @@ export const menuItems = [
     name: { ru: 'Соус Барбекю', kz: 'Барбекю тұздығы' },
     desc: { ru: 'Фирменный соус барбекю', kz: 'Фирмалық барбекю тұздығы' },
     price: 190,
+    image: mSauces,
   },
   {
     id: 'sauce-cheese',
@@ -654,6 +715,7 @@ export const menuItems = [
     name: { ru: 'Сырный соус', kz: 'Сырлы тұздық' },
     desc: { ru: 'Нежный сырный соус', kz: 'Жұмсақ сырлы тұздық' },
     price: 190,
+    image: mSauces,
   },
   {
     id: 'sauce-tomato',
@@ -665,6 +727,7 @@ export const menuItems = [
       kz: 'Классикалық қызанақ тұздығы',
     },
     price: 190,
+    image: mSauces,
   },
   {
     id: 'sauce-tomato-50',
@@ -676,6 +739,7 @@ export const menuItems = [
       kz: 'Классикалық қызанақ тұздығы',
     },
     price: 290,
+    image: mSauces,
   },
   {
     id: 'sauce-tartar',
@@ -687,6 +751,7 @@ export const menuItems = [
       kz: 'Қаймақ негізіндегі тартар тұздығы',
     },
     price: 190,
+    image: mSauces,
   },
   {
     id: 'sauce-tartar-50',
@@ -698,6 +763,7 @@ export const menuItems = [
       kz: 'Қаймақ негізіндегі тартар тұздығы',
     },
     price: 290,
+    image: mSauces,
   },
   {
     id: 'sauce-curry',
@@ -706,6 +772,7 @@ export const menuItems = [
     name: { ru: 'Соус Карри', kz: 'Карри тұздығы' },
     desc: { ru: 'Пряный соус карри', kz: 'Хош иісті карри тұздығы' },
     price: 190,
+    image: mSauces,
   },
 
   // ---------- DRINKS ----------
@@ -727,6 +794,7 @@ export const menuItems = [
       kz: 'Құйылған Ava лимонады, 0.5л',
     },
     price: 590,
+    image: mAva,
   },
   {
     id: 'drink-salam-cola-1l',
@@ -735,6 +803,7 @@ export const menuItems = [
     name: { ru: 'Salam Cola 1л', kz: 'Salam Cola 1л' },
     desc: { ru: 'Газированный напиток, 1л', kz: 'Газдалған сусын, 1л' },
     price: 790,
+    image: mSalamCola,
   },
   {
     id: 'drink-salam-cola-can',
@@ -786,6 +855,7 @@ export const menuItems = [
     name: { ru: 'Детский сок DaDa', kz: 'DaDa балалар шырыны' },
     desc: { ru: 'Детский сок, 0.2л', kz: 'Балалар шырыны, 0.2л' },
     price: 390,
+    image: mDada,
   },
   {
     id: 'drink-ayran',
