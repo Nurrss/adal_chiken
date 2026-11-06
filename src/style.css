@@ -1983,3 +1983,118 @@ body.no-scroll {
     justify-content: flex-end;
   }
 }
+
+/* =========================================================
+   Кнопки связи: позвонить / WhatsApp / Instagram
+   ========================================================= */
+.contact-section {
+  padding: 28px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid rgba(58, 31, 18, 0.06);
+  box-shadow: var(--shadow);
+  color: var(--dark);
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+@media (hover: hover) {
+  .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(61, 43, 31, 0.18);
+  }
+}
+
+.contact-btn:active {
+  transform: scale(0.97);
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.contact-icon svg {
+  width: 27px;
+  height: 27px;
+  fill: currentColor;
+}
+
+.contact-call .contact-icon {
+  background: var(--orange);
+}
+
+.contact-whatsapp .contact-icon {
+  background: #25d366;
+}
+
+.contact-instagram .contact-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contact-title {
+  font-weight: 800;
+  font-size: 1.08rem;
+}
+
+.contact-sub {
+  font-size: 0.88rem;
+  color: #7a6656;
+  white-space: nowrap;
+}
+
+/* Телефон: три кнопки в ряд, иконка над подписью */
+@media (max-width: 639px) {
+  .contact-section {
+    padding: 22px 0 10px;
+  }
+
+  .contact-grid {
+    gap: 10px;
+  }
+
+  .contact-btn {
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 6px;
+    text-align: center;
+  }
+
+  .contact-text {
+    align-items: center;
+  }
+
+  .contact-title {
+    font-size: 0.92rem;
+  }
+
+  .contact-sub {
+    font-size: 0.72rem;
+    white-space: normal;
+  }
+}
