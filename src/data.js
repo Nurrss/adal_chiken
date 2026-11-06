@@ -180,19 +180,8 @@ export const menuItems = [
       ru: 'Моцарелла, итальянские колбаски, фирменный соус',
       kz: 'Моцарелла, итальян шұжықтары, фирмалық тұздық',
     },
-    price: 2590,
+    price: 2690,
     image: imgPeperoni,
-  },
-  {
-    id: 'pizza-italian',
-    category: 'pizza',
-    icon: '🍕',
-    name: { ru: 'Итальянская', kz: 'Итальяндық' },
-    desc: {
-      ru: 'Моцарелла, свежие помидоры, шампиньоны, болгарский перец, оливки, орегано, фирменный соус',
-      kz: 'Моцарелла, балғын қызанақ, шампиньон, болгар бұрышы, зәйтүн, орегано, фирмалық тұздық',
-    },
-    price: 2590,
   },
   {
     id: 'pizza-4seasons',
@@ -203,7 +192,7 @@ export const menuItems = [
       ru: 'Моцарелла, итальянские колбаски, свежие помидоры, шампиньоны, маринованная курица, фирменный соус',
       kz: 'Моцарелла, итальян шұжықтары, балғын қызанақ, шампиньон, маринадталған тауық еті, фирмалық тұздық',
     },
-    price: 2590,
+    price: 2690,
     image: img4sezon,
   },
   {
@@ -215,7 +204,7 @@ export const menuItems = [
       ru: 'Моцарелла, куриное филе, шампиньоны, фирменный соус',
       kz: 'Моцарелла, тауық филесі, шампиньон, фирмалық тұздық',
     },
-    price: 2590,
+    price: 2690,
     image: imgGrib,
   },
   {
@@ -227,54 +216,110 @@ export const menuItems = [
       ru: 'Сыр моцарелла, сыр сметанковый, сыр творожный, фирменный соус',
       kz: 'Моцарелла сыры, қаймақ сыры, сүзбе сыры, фирмалық тұздық',
     },
-    price: 2590,
+    price: 2490,
     image: imgCheese,
   },
   {
-    id: 'pizza-cheese-crust',
+    id: 'pizza-mexican',
     category: 'pizza',
-    icon: '🧀',
-    name: { ru: 'Сырный бортик', kz: 'Сырлы шеті' },
+    icon: '🌶️',
+    name: { ru: 'Мексиканская (острая)', kz: 'Мексикалық (ащы)' },
     desc: {
-      ru: 'Дополнительный сырный бортик к любой пицце',
-      kz: 'Кез келген пиццаға қосымша сырлы шет',
+      ru: 'Моцарелла, свежие помидоры, охотничьи сосиски, болгарский перец, оливки, перчик халапеньо, фирменный соус',
+      kz: 'Моцарелла, балғын қызанақ, аңшы шұжықтары, болгар бұрышы, зәйтүн, халапеньо бұрышы, фирмалық тұздық',
     },
-    price: 500,
-  },
-
-  // ---------- SETS ----------
-  {
-    id: 'set-solo-burger',
-    category: 'sets',
-    icon: '🍔',
-    name: { ru: 'SOLO Burger / Roll / Dog', kz: 'SOLO Burger / Roll / Dog' },
-    desc: {
-      ru: 'Фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
-      kz: 'Фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
-    },
-    price: 2590,
+    price: 2690,
   },
   {
-    id: 'set-solo-doner',
-    category: 'sets',
-    icon: '🌯',
-    name: { ru: 'SOLO Doner / Cheese', kz: 'SOLO Doner / Cheese' },
+    id: 'pizza-bbq',
+    category: 'pizza',
+    icon: '🍕',
+    name: { ru: 'Барбекю', kz: 'Барбекю' },
     desc: {
-      ru: 'Фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
-      kz: 'Фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
+      ru: 'Моцарелла, охотничьи сосиски, куриное филе, шампиньоны, барбекю соус, фирменный соус',
+      kz: 'Моцарелла, аңшы шұжықтары, тауық филесі, шампиньон, барбекю тұздығы, фирмалық тұздық',
+    },
+    price: 2690,
+  },
+  {
+    id: 'pizza-meat',
+    category: 'pizza',
+    icon: '🍕',
+    name: { ru: 'Мясная', kz: 'Етті' },
+    desc: {
+      ru: 'Моцарелла, копчёная говядина, мясной фарш, фирменный соус',
+      kz: 'Моцарелла, ысталған сиыр еті, тартылған ет, фирмалық тұздық',
     },
     price: 2990,
   },
   {
-    id: 'set-mamasita',
-    category: 'sets',
-    icon: '🧒',
-    name: { ru: 'Детский сет MAMASITA', kz: 'Балалар жинағы MAMASITA' },
+    id: 'pizza-burger',
+    category: 'pizza',
+    icon: '🍕',
+    name: { ru: 'Пицца Бургер', kz: 'Пицца Бургер' },
     desc: {
-      ru: 'Наггетсы — 10 шт, стрипсы — 10 шт, фри S — 2 порции, 2 сока 0.2л, соус — 2 шт',
-      kz: 'Наггетс — 10 дана, стрипс — 10 дана, фри S — 2 дана, 2 шырын 0.2л, тұздық — 2 дана',
+      ru: 'Моцарелла, мясной фарш, помидоры черри, красный лук, фирменный соус',
+      kz: 'Моцарелла, тартылған ет, шие қызанақ, қызыл пияз, фирмалық тұздық',
     },
-    price: 4590,
+    price: 2990,
+  },
+
+  // ---------- SETS ----------
+  {
+    id: 'combo-burger',
+    category: 'sets',
+    icon: '🍔',
+    name: { ru: 'COMBO BURGER', kz: 'COMBO BURGER' },
+    desc: {
+      ru: 'Chicken Burger + фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
+      kz: 'Chicken Burger + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
+    },
+    price: 2690,
+  },
+  {
+    id: 'combo-roll',
+    category: 'sets',
+    icon: '🌯',
+    name: { ru: 'COMBO ROLL', kz: 'COMBO ROLL' },
+    desc: {
+      ru: 'Chicken Roll + фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
+      kz: 'Chicken Roll + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
+    },
+    price: 2690,
+  },
+  {
+    id: 'combo-dog',
+    category: 'sets',
+    icon: '🌭',
+    name: { ru: 'COMBO DOG', kz: 'COMBO DOG' },
+    desc: {
+      ru: 'Chicken Dog + фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
+      kz: 'Chicken Dog + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
+    },
+    price: 2690,
+  },
+  {
+    id: 'combo-doner',
+    category: 'sets',
+    icon: '🌯',
+    name: { ru: 'COMBO DONER', kz: 'COMBO DONER' },
+    desc: {
+      ru: 'Chicken Doner + фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
+      kz: 'Chicken Doner + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
+    },
+    price: 2990,
+  },
+  {
+    id: 'combo-cheese',
+    category: 'sets',
+    icon: '🍔',
+    name: { ru: 'COMBO CHEESE', kz: 'COMBO CHEESE' },
+    desc: {
+      ru: 'Cheese Burger + фри M — 1 порция, соус — 1 шт, в подарок Salam Cola 0.5л',
+      kz: 'Cheese Burger + фри M — 1 дана, тұздық — 1 дана, сыйлыққа Salam Cola 0.5л',
+    },
+    price: 2990,
+    image: imgBurger,
   },
   {
     id: 'set-duel',
@@ -282,10 +327,11 @@ export const menuItems = [
     icon: '🍗',
     name: { ru: 'DUEL (2 персоны)', kz: 'DUEL (2 адам)' },
     desc: {
-      ru: 'Крылышки — 15 шт, фри S — 1 порция, соус — 2 шт, в подарок Salam Cola',
-      kz: 'Қанат — 15 дана, фри S — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
+      ru: 'Крылышки — 10 шт, фри S — 1 порция, соус — 2 шт, в подарок Salam Cola',
+      kz: 'Қанат — 10 дана, фри S — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
     },
-    price: 4590,
+    price: 3990,
+    oldPrice: 4590,
     image: imgDue,
     imageCover: true, // фото на сером фоне — растянуть на всю карточку
   },
@@ -299,6 +345,7 @@ export const menuItems = [
       kz: 'Тауық — 14 дана, фри S — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
     },
     price: 4990,
+    oldPrice: 5590,
   },
   {
     id: 'set-trio',
@@ -310,6 +357,7 @@ export const menuItems = [
       kz: 'Қанат — 20 дана, фри M — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
     },
     price: 5590,
+    oldPrice: 6590,
   },
   {
     id: 'set-friends',
@@ -321,6 +369,7 @@ export const menuItems = [
       kz: 'Қанат — 30 дана, фри M — 1 дана, тұздық — 3 дана, сыйлыққа Salam Cola',
     },
     price: 6990,
+    oldPrice: 7990,
     image: imgFriends,
   },
   {
@@ -332,7 +381,8 @@ export const menuItems = [
       ru: 'Крылышки — 10 шт, курочка — 14 шт, стрипсы — 10 шт, фри M — 2 порции, соус — 4 шт, в подарок Salam Cola',
       kz: 'Қанат — 10 дана, тауық — 14 дана, стрипс — 10 дана, фри M — 2 дана, тұздық — 4 дана, сыйлыққа Salam Cola',
     },
-    price: 8990,
+    price: 9990,
+    oldPrice: 10990,
   },
   {
     id: 'set-mix',
@@ -340,12 +390,24 @@ export const menuItems = [
     icon: '🍗',
     name: { ru: 'MIX (6-7 персон)', kz: 'MIX (6-7 адам)' },
     desc: {
-      ru: 'Крылышки — 20 шт, курочка — 14 шт, стрипсы — 10 шт, ножки — 6 шт, фри L — 2 порции, соус — 6 шт, в подарок Salam Cola',
-      kz: 'Қанат — 20 дана, тауық — 14 дана, стрипс — 10 дана, сирақ — 6 дана, фри L — 2 дана, тұздық — 6 дана, сыйлыққа Salam Cola',
+      ru: 'Крылышки — 20 шт, курочка — 14 шт, стрипсы — 10 шт, ножки — 5 шт, фри L — 2 порции, соус — 6 шт, в подарок Salam Cola',
+      kz: 'Қанат — 20 дана, тауық — 14 дана, стрипс — 10 дана, сирақ — 5 дана, фри L — 2 дана, тұздық — 6 дана, сыйлыққа Salam Cola',
     },
     price: 12990,
+    oldPrice: 14990,
     image: imgMix,
     imageCover: true,
+  },
+  {
+    id: 'set-mamasita',
+    category: 'sets',
+    icon: '🧒',
+    name: { ru: 'Детский сет MAMASITA', kz: 'Балалар жинағы MAMASITA' },
+    desc: {
+      ru: 'Наггетсы — 10 шт, стрипсы — 10 шт, фри S — 2 порции, 2 сока 0.2л, соус — 2 шт',
+      kz: 'Наггетс — 10 дана, стрипс — 10 дана, фри S — 2 дана, 2 шырын 0.2л, тұздық — 2 дана',
+    },
+    price: 4990,
   },
   {
     id: 'set-pizza',
@@ -353,10 +415,10 @@ export const menuItems = [
     icon: '🍕',
     name: { ru: 'Сет с пиццей', kz: 'Пиццалы жинақ' },
     desc: {
-      ru: 'Крылышки — 20 шт, пицца — 1 порция, фри L — 1 порция, соус — 2 шт, сырный бортик — 500г, в подарок Salam Cola',
-      kz: 'Қанат — 20 дана, пицца — 1 дана, фри L — 1 дана, тұздық — 2 дана, сырлы шет — 500г, сыйлыққа Salam Cola',
+      ru: 'Крылышки — 20 шт, пицца — 1 порция, фри L — 1 порция, соус — 2 шт, в подарок Salam Cola',
+      kz: 'Қанат — 20 дана, пицца — 1 дана, фри L — 1 дана, тұздық — 2 дана, сыйлыққа Salam Cola',
     },
-    price: 7590,
+    price: 7990,
   },
 
   // ---------- CHICKEN ----------
@@ -366,7 +428,7 @@ export const menuItems = [
     icon: '🍗',
     name: { ru: 'Крылышки 10 шт', kz: 'Қанат 10 дана' },
     desc: { ru: 'Хрустящие куриные крылышки', kz: 'Қытырлақ тауық қанаттары' },
-    price: 2290,
+    price: 2490,
   },
   {
     id: 'wings-20',
@@ -374,7 +436,7 @@ export const menuItems = [
     icon: '🍗',
     name: { ru: 'Крылышки 20 шт', kz: 'Қанат 20 дана' },
     desc: { ru: 'Хрустящие куриные крылышки', kz: 'Қытырлақ тауық қанаттары' },
-    price: 4290,
+    price: 4490,
   },
   {
     id: 'wings-30',
@@ -382,7 +444,7 @@ export const menuItems = [
     icon: '🍗',
     name: { ru: 'Крылышки 30 шт', kz: 'Қанат 30 дана' },
     desc: { ru: 'Хрустящие куриные крылышки', kz: 'Қытырлақ тауық қанаттары' },
-    price: 5890,
+    price: 5990,
   },
   {
     id: 'drumsticks-1',
@@ -438,7 +500,7 @@ export const menuItems = [
     icon: '🍗',
     name: { ru: 'Наггетсы 5 шт', kz: 'Наггетс 5 дана' },
     desc: { ru: 'Нежные куриные наггетсы', kz: 'Жұмсақ тауық наггетстері' },
-    price: 890,
+    price: 990,
   },
   {
     id: 'nuggets-10',
@@ -478,7 +540,7 @@ export const menuItems = [
       ru: 'Сочный куриный донер с овощами и соусом',
       kz: 'Көкөністер мен тұздықпен дайындалған шырынды тауық донері',
     },
-    price: 1590,
+    price: 1690,
   },
   {
     id: 'cheese-burger',
@@ -489,7 +551,7 @@ export const menuItems = [
       ru: 'Сочная котлета, сыр чеддер, свежие овощи',
       kz: 'Шырынды котлет, чеддер сыры, балғын көкөністер',
     },
-    price: 1590,
+    price: 1690,
     image: imgBurger,
   },
   {
@@ -501,7 +563,7 @@ export const menuItems = [
       ru: 'Хрустящая курица в лаваше с соусом и овощами',
       kz: 'Тұздық пен көкөністермен лавашқа орналған қытырлақ тауық',
     },
-    price: 1290,
+    price: 1490,
   },
   {
     id: 'chicken-burger',
@@ -512,7 +574,7 @@ export const menuItems = [
       ru: 'Хрустящее куриное филе, свежие овощи, фирменный соус',
       kz: 'Қытырлақ тауық филесі, балғын көкөністер, фирмалық тұздық',
     },
-    price: 1290,
+    price: 1490,
   },
   {
     id: 'chicken-dog',
@@ -534,7 +596,7 @@ export const menuItems = [
       ru: 'Чикен и фри в соусе с арабским лавашом',
       kz: 'Араб лавашымен бірге тұздықтағы чикен және фри',
     },
-    price: 2290,
+    price: 2490,
   },
 
   // ---------- SIDES & SAUCES ----------
@@ -591,7 +653,7 @@ export const menuItems = [
     id: 'sauce-tomato',
     category: 'sides',
     icon: '🥫',
-    name: { ru: 'Томатный соус', kz: 'Қызанақ тұздығы' },
+    name: { ru: 'Томатный соус 30г', kz: 'Қызанақ тұздығы 30г' },
     desc: {
       ru: 'Классический томатный соус',
       kz: 'Классикалық қызанақ тұздығы',
@@ -599,15 +661,37 @@ export const menuItems = [
     price: 190,
   },
   {
+    id: 'sauce-tomato-50',
+    category: 'sides',
+    icon: '🥫',
+    name: { ru: 'Томатный соус 50г', kz: 'Қызанақ тұздығы 50г' },
+    desc: {
+      ru: 'Классический томатный соус',
+      kz: 'Классикалық қызанақ тұздығы',
+    },
+    price: 290,
+  },
+  {
     id: 'sauce-tartar',
     category: 'sides',
     icon: '🥫',
-    name: { ru: 'Соус Тартар', kz: 'Тартар тұздығы' },
+    name: { ru: 'Соус Тартар 30г', kz: 'Тартар тұздығы 30г' },
     desc: {
       ru: 'Соус тартар на сметанной основе',
       kz: 'Қаймақ негізіндегі тартар тұздығы',
     },
     price: 190,
+  },
+  {
+    id: 'sauce-tartar-50',
+    category: 'sides',
+    icon: '🥫',
+    name: { ru: 'Соус Тартар 50г', kz: 'Тартар тұздығы 50г' },
+    desc: {
+      ru: 'Соус тартар на сметанной основе',
+      kz: 'Қаймақ негізіндегі тартар тұздығы',
+    },
+    price: 290,
   },
   {
     id: 'sauce-curry',
@@ -625,7 +709,7 @@ export const menuItems = [
     icon: '🥤',
     name: { ru: 'Разливная Salam Cola', kz: 'Құйылған Salam Cola' },
     desc: { ru: 'Разливная кола, 0.5л', kz: 'Құйылған кола, 0.5л' },
-    price: 490,
+    price: 590,
   },
   {
     id: 'drink-ava-draft',
@@ -636,7 +720,7 @@ export const menuItems = [
       ru: 'Разливной лимонад Ava, 0.5л',
       kz: 'Құйылған Ava лимонады, 0.5л',
     },
-    price: 490,
+    price: 590,
   },
   {
     id: 'drink-salam-cola-1l',
@@ -644,7 +728,7 @@ export const menuItems = [
     icon: '🥤',
     name: { ru: 'Salam Cola 1л', kz: 'Salam Cola 1л' },
     desc: { ru: 'Газированный напиток, 1л', kz: 'Газдалған сусын, 1л' },
-    price: 690,
+    price: 790,
   },
   {
     id: 'drink-salam-cola-can',
@@ -655,7 +739,7 @@ export const menuItems = [
       ru: 'Газированный напиток в железной банке',
       kz: 'Темір банкадағы газдалған сусын',
     },
-    price: 490,
+    price: 590,
   },
   {
     id: 'drink-piala-1l',
@@ -663,7 +747,7 @@ export const menuItems = [
     icon: '🥤',
     name: { ru: 'Piala 1л', kz: 'Piala 1л' },
     desc: { ru: 'Лимонад Piala, 1л', kz: 'Piala лимонады, 1л' },
-    price: 690,
+    price: 790,
   },
   {
     id: 'drink-piala-05',
@@ -671,7 +755,7 @@ export const menuItems = [
     icon: '🥤',
     name: { ru: 'Piala 0.5л', kz: 'Piala 0.5л' },
     desc: { ru: 'Лимонад Piala, 0.5л', kz: 'Piala лимонады, 0.5л' },
-    price: 490,
+    price: 590,
   },
   {
     id: 'drink-asu-1l',
@@ -695,7 +779,7 @@ export const menuItems = [
     icon: '🧃',
     name: { ru: 'Детский сок DaDa', kz: 'DaDa балалар шырыны' },
     desc: { ru: 'Детский сок, 0.2л', kz: 'Балалар шырыны, 0.2л' },
-    price: 290,
+    price: 390,
   },
   {
     id: 'drink-ayran',

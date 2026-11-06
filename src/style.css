@@ -1955,3 +1955,31 @@ body.no-scroll {
   object-fit: cover;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
 }
+
+/* Старая цена у сетов со скидкой */
+.price-wrap {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+}
+
+.old-price {
+  color: #d62828;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  opacity: 0.85;
+}
+
+.sheet-add-price .old-price {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 4px;
+}
+
+@media (max-width: 559px) {
+  .menu-card .price-wrap {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}

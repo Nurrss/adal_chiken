@@ -45,7 +45,10 @@ onBeforeUnmount(() => {
             @click="addToCart(openedItem.id)"
           >
             <span>{{ t.add_to_cart_price }}</span>
-            <span class="sheet-add-price">{{ formatPrice(openedItem.price) }} {{ t.currency }}</span>
+            <span class="sheet-add-price">
+              <s v-if="openedItem.oldPrice" class="old-price">{{ formatPrice(openedItem.oldPrice) }}</s>
+              {{ formatPrice(openedItem.price) }} {{ t.currency }}
+            </span>
           </button>
           <template v-else>
             <div class="qty-control qty-lg">
